@@ -1,0 +1,19 @@
+.rounded-image{
+    width: 200px; /* Adjust the width as needed */
+  height: 250px; /* Maintain aspect ratio */
+  border-radius: 15px;
+  border-color: rgb(244, 5, 5);
+}
+
+.curved-container {
+  top:250px;
+  width: 700px; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+  background-color: #070707; /* Container background color */
+  border-radius: 20px; /* Curves the corners */
+  padding: 20px; /* Inner spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  text-align: center; /* Centers the text */
+}
+
+

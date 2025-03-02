@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.container{
+  
+    margin-top: 100px;
+    display: flex;
+    flex:3;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-y: auto; 
+    
+    
+  }
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;  
+      justify-content: center;  
+      align-items: center;         /* Full width for small screens */
+    }
+  }

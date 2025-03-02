@@ -1,0 +1,38 @@
+.moving-bar-container {
+    overflow: hidden; /* Hide overflowing content */
+    width: 100%;      /* Full width of the container */
+    height: 40px;     /* Adjust height as needed */
+    background-color: #080808; /* Background color for the container */
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 110px;
+    z-index: 999;
+    
+  }
+  
+  .moving-bar {
+    display: flex;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    animation: moveBar 15s linear infinite; /* Smooth, infinite scrolling */
+  }
+  
+  .moving-bar li {
+    padding: 0 20px;  /* Space between items */
+    white-space: nowrap; /* Prevent text wrapping */
+    color: #f2f3f5;   /* Text color */
+    font-size: 15px;  /* Adjust font size as needed */
+  }
+  
+  /* Keyframe animation for seamless scrolling */
+  @keyframes moveBar {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); /* Scroll halfway to loop seamlessly */
+    }
+  }
+  

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="thread-container">
+    <div *ngFor="let step of journey; let i = index" class="thread-step">
+      <!-- Step Number -->
+      <div class="step-number">{{ i + 1 }}</div>
+  
+      <!-- Step Content -->
+      <div class="step-content">
+        <h3>{{ step.title }}</h3>
+        <p>{{ step.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,7 @@ name: Deploy Angular App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change to the branch you want to trigger deployment
+      - main  # Change to your main branch
 
 jobs:
   build:
@@ -21,6 +21,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Angular CLI  # Add this step
+        run: npm install -g @angular/cli
+
       - name: Build Angular app
         run: ng build --configuration production --base-href /Portfolio/
 
@@ -28,4 +31,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/port-folio
+          folder: dist/port-folio  # Replace with actual project name
